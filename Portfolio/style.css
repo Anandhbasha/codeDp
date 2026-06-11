@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar{
+    width: 100%;
+    background-color: teal;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 800;
+}
+.home{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.homeSectionLeft{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+.homeSectionRight{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+}
+.imageBg{
+    width: 350px;
+    height: 350px;
+    background-color: skyblue;
+    border-radius: 30px;
+    position: relative;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background: url("./Images/profile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.homeLeftBtm{
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.homeLeftBtm > button{
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+.hire{
+    background-color: orangered;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    transition: 2s ease;
+    border: 2px solid;
+    
+}
+.contactBtn{
+    background-color: seagreen;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: 2s ease;
+    border: 2px solid;
+}
+
+.hire:hover{
+    background-color: white;
+    color: orangered;
+    transition: 2s ease;
+    border-color: orangered;
+}
+.contactBtn:hover{
+    background-color: white;
+    color: seagreen;
+    transition: 2s ease;
+    border-color: seagreen;
+}
+
+.profileName{
+    color: gray;
+}
+.profileName::first-letter{
+    font-size: 3.2em;
+    color: navy;
+}
