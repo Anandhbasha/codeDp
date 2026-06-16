@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sideBar">SideBar</div>
+        <div class="con1">Content1</div>
+        <div class="con2">Content2</div>
+        <div class="con3">Content3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="container">
+        <div class="LeftSideRed"></div>
+        <div class="topSideBlue"></div>
+        <div class="topSideRight"></div>
+        <div class="secondRowFirst"></div>
+        <div class="secondRowSecond"></div>
+        <div class="secondRowThird"></div>
+        <div class="LastRowWhite"></div>
+        <div class="LastRowRed"></div>
+        <div class="LastRowBlue"></div>
+    </div>
+</body>
+</html> -->

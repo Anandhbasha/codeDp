@@ -1,0 +1,56 @@
+.header,.footer{
+    background: linear-gradient(rgb(0, 191, 255),rgb(97, 7, 130));
+    color: white;
+    text-align: center;
+}
+.sideBar{
+    background-color: aqua;
+    color: white;
+    text-align: center;
+}
+.con1,.con2,.con3{
+    background: linear-gradient(rgb(149, 0, 255),rgb(0, 114, 122));
+    color: white;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "s c1 c1"
+    "s c2 c3"
+    "f f f";
+    gap: 10px;
+
+}
+.header{
+    display: grid;
+    align-items: center;
+    grid-area: h;
+}
+.sideBar{
+    display: grid;
+    align-items: center;
+    grid-area: s;
+}
+.con1{
+    display: grid;
+    align-items: center;
+    grid-area: c1;
+}
+.con2{
+    display: grid;
+    align-items: center;
+    grid-area: c2;
+}
+.con3{
+    display: grid;
+    align-items: center;
+    grid-area: c3;
+}
+.footer{
+    display: grid;
+    align-items: center;
+    grid-area: f;
+}

@@ -1,0 +1,83 @@
+/* .container{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,290px);
+    grid-template-rows: repeat(4,24vh);
+    gap: 10px;
+    padding: 10px;
+}
+
+.LeftSideRed{
+    background-color: red;
+    grid-row: 1/3;
+}
+.topSideBlue{
+    background-color: skyblue;
+    grid-column: 2/4;
+}
+.topSideRight{
+    background-color: goldenrod;
+    grid-column: 4/6;
+    
+}
+.secondRowFirst{
+    background-color: goldenrod;
+    grid-row: 2/4;
+}
+.secondRowSecond{
+    background-color: white;
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+.secondRowThird{
+    background-color: red;
+    grid-row: 2/5;
+}
+.LastRowWhite{
+    background-color: white;
+    grid-row: 3/5;
+}
+.LastRowRed{
+    background-color: red;
+    grid-column: 2/4;
+}
+.LastRowBlue{
+    background-color: skyblue;
+} */
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-rows: repeat(4,24vh);
+    gap: 10px;
+}
+.Header,.sidebar,.con1,.con2,.con3,.footer{
+    background-color: red;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.Header{
+    /* grid-column: 1/4; */
+    grid-column: span 3;
+}
+.sidebar{
+    /* grid-row: 2/4; */
+    grid-row: span 2;
+}
+.con1{
+    /* grid-column: 2/4; */
+    grid-column: span 2;
+}
+.footer{
+    /* grid-column: 1/4; */
+    grid-column: span 3;
+}
