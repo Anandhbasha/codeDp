@@ -1,0 +1,44 @@
+.Container{
+        
+}
+.navBar{
+    height: 8vh;
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.hamBurger{
+    display: none;
+}
+.CNameLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Logo{
+    height: 5vh;
+    width: 40px;
+    border-radius: 10px;
+}
+.Logo > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+@media (min-width:400px){
+    a{
+        display: none;
+    }
+    .hamBurger{
+        display: block;   
+    }
+    .navBar{
+        text-align: right;
+    }
+}
