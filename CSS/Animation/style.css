@@ -1,0 +1,147 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 3s ease;
+    margin: 150px;
+}
+
+.box:hover{
+    background-color: rebeccapurple;
+    /* transform: translate(-50px,-100px); */
+    /* transform: scale(.5); */
+    transform: rotate(-45deg);
+    transition: 3s;
+}
+.navBar{
+    background-color: teal;
+    color: rgba(254, 70, 38, 0.543);
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+li{
+    list-style-type: none;
+    position: relative;
+}
+.navBar >li::after{
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    content: "";
+    height: 4px;
+    background-color: tomato;
+    width: 100%;
+    transform: scale(0);
+    transition: 2s ease;
+    border-radius: 2px;
+}
+
+.navBar >li:hover::after{
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+/* .boxes{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    animation: movebox 3s infinite;
+}
+
+@keyframes movebox {
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 200px;
+    }
+} */
+
+/* .boxes{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    animation: rotatebox 3s infinite;
+}
+
+@keyframes rotatebox {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+/* .boxes{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    animation: bgChange 5s infinite;
+}
+
+@keyframes bgChange {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: rebeccapurple;
+    }
+    100%{
+        background-color: turquoise;
+    }
+} */
+
+.loader{
+    height: 50px;
+    width: 50px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+h1{
+    animation:fade 4s;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.progress{
+    width: 100px;
+    height: 20px;
+    background: #ddd;
+}
+.fill{
+    width: 80%;
+    height: 100%;
+    background-color: steelblue;
+    animation: load 5s;
+}
+@keyframes load {
+    from{
+       width: 0%; 
+    }
+    to{
+        width: 80%;
+    }
+}
