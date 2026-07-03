@@ -1,0 +1,325 @@
+JavaScript Operators Tasks (Only Your Completed Topics)
+
+#Arithmetic Operator Tasks
+
+1. Add two numbers and print the result
+2. Subtract 50 from 100
+3. Multiply 12 and 5
+4. Divide 144 by 12
+5. Find remainder when 25 is divided by 4
+6. Use ++ operator and print value before increment
+7. Use ++ operator and print value after increment
+8. Use -- operator and print value before decrement
+9. Use -- operator and print value after decrement
+10. Calculate (10+20)*2
+11. Calculate 100/5+10
+12. Calculate 50-(5*6)
+13. Calculate (8*2)+(20/5)
+14. Calculate 40%6+10
+15. Predict output of:
+
+
+let a = 5
+console.log(a++ + ++a)
+
+
+
+
+Comparison Operator Tasks
+
+16. Check whether 20 is greater than 15
+17. Check whether 10 is less than 2
+18. Check whether 50 is greater than or equal to 50
+19. Check whether 30 is less than or equal to 25
+20. Compare 100 == "100"
+21. Compare 100 === "100"
+22. Check 25 != 30
+23. Check 40 == 40
+24. Check "5" === 5
+25. Predict output:
+
+
+console.log(10 > 5 == true)
+
+
+
+
+Logical Operator Tasks
+
+26. Check:
+
+
+10>5 && 20>10
+
+
+27. Check:
+
+
+10<5 || 20>10
+
+
+28. Use ! operator for:
+
+
+10==10
+
+
+29. Predict output:
+
+
+console.log(10>5 && 5>10 || 20==20)
+
+
+
+
+Assignment + Ternary Tasks
+
+30. Create variable x=10 and perform:
+
+
+x+=20
+x*=2
+x-=10
+
+
+Print final value.
+
+31. Use ternary operator:
+    If age is greater than or equal to 18 print "Adult" else "Minor"
+
+32. Use ternary operator:
+    If number is even print "Even" else "Odd"
+
+33. Predict output:
+
+
+let a = 10
+a += 5
+a *= 2
+console.log(a)
+
+
+34. Predict output:
+
+
+console.log(5>2 ? "Yes" : "No")
+
+
+35. Predict output:
+
+
+console.log(10<5 ? 100 : 200)
+
+
+
+whileLoop
+
+# JavaScript `while` Loop Tasks – Hard Level (30 Tasks)
+
+1. Print numbers from 100 to 1 using a `while` loop.
+
+2. Find the sum of all even numbers between 1 and 500.
+
+3. Reverse a number using a `while` loop.
+
+4. Check whether a number is a palindrome.
+
+5. Find the factorial of a number using `while`.
+
+6. Count the number of digits in a number.
+
+7. Find the largest digit in a number.
+
+8. Find the smallest digit in a number.
+
+9. Print the multiplication table of a number in reverse order.
+
+10. Find the sum of digits of a number repeatedly until a single digit comes.
+    Example: `9875 → 9+8+7+5 = 29 → 2+9 = 11 → 1+1 = 2`
+
+11. Check whether a number is an Armstrong number.
+
+12. Check whether a number is a Strong number.
+
+13. Print all Armstrong numbers between 1 and 1000.
+
+14. Print all prime numbers between 1 and 200 using `while`.
+
+15. Find the HCF (Highest Common Factor) of two numbers.
+
+16. Find the LCM of two numbers using `while`.
+
+17. Convert a decimal number to binary using `while`.
+
+18. Convert a binary number to decimal using `while`.
+
+19. Find whether a number is a perfect number.
+
+20. Print Fibonacci series until the value exceeds 1000.
+
+21. Find the second largest digit in a number.
+
+22. Remove all zeros from a number.
+    Example: `102030 → 123`
+
+23. Check whether a number contains duplicate digits.
+
+24. Find the frequency of each digit in a number.
+
+25. Print all factors of a number using `while`.
+
+26. Find whether a number is a neon number.
+
+27. Rotate digits of a number to the left by one position.
+    Example: `1234 → 2341`
+
+28. Rotate digits of a number to the right by one position.
+    Example: `1234 → 4123`
+
+29. Create a number guessing game using `while` loop and `prompt()`.
+
+30. ATM Simulation using `while`
+
+* Show menu repeatedly
+* Deposit
+* Withdraw
+* Balance Check
+* Exit only when user chooses exit option.
+
+
+
+
+# Do While Loop Tasks
+
+21. Print numbers from 1 to 20 using do while.
+22. Print even numbers from 1 to 50.
+23. Print odd numbers from 1 to 50.
+24. Create password checker using do while.
+25. Create ATM PIN validation logic.
+26. Menu driven calculator using do while.
+27. Keep asking user input until user enters positive number.
+28. Reverse a string using do while.
+29. Find total of array using do while.
+30. Print star pattern using do while.
+
+---
+
+# For Loop Tasks
+
+31. Print numbers divisible by 3 from 1 to 100.
+32. Print square of numbers from 1 to 20.
+33. Print cube of numbers from 1 to 20.
+34. Find sum of even numbers between 1 and 100.
+35. Find sum of odd numbers between 1 and 100.
+36. Find prime numbers from 1 to 100.
+37. Check whether a number is prime.
+38. Print multiplication table in reverse order.
+39. Print ASCII values from A-Z.
+40. Find factorial using for loop.
+41. Reverse a string using for loop.
+42. Count vowels in a string.
+43. Count consonants in a string.
+44. Find frequency of a character in string.
+45. Remove spaces from a string.
+46. Convert lowercase string to uppercase without built-in methods.
+47. Print pattern:
+
+```txt
+*
+**
+***
+****
+*****
+```
+
+48. Print pattern:
+
+```txt
+*****
+****
+***
+**
+*
+```
+
+49. Print number pyramid.
+50. Print Floyd’s triangle.
+
+---
+
+# String Tasks
+
+51. Reverse a string.
+52. Check palindrome string.
+53. Count total vowels.
+54. Count total words in sentence.
+55. Find longest word in string.
+56. Replace all spaces with `-`.
+57. Convert first letter to uppercase.
+58. Find duplicate characters in string.
+59. Remove duplicate characters.
+60. Check whether two strings are anagrams.
+
+---
+
+# Array Tasks
+
+61. Find largest element in array.
+62. Find smallest element in array.
+63. Find second largest element.
+64. Find sum of all array elements.
+65. Find average of array elements.
+66. Reverse an array.
+67. Sort array ascending order.
+68. Sort array descending order.
+69. Find duplicate elements in array.
+70. Remove duplicate elements.
+71. Merge two arrays.
+72. Find common elements between two arrays.
+73. Rotate array left by 1 position.
+74. Rotate array right by 1 position.
+75. Count even and odd numbers in array.
+
+---
+
+# forEach Tasks
+
+76. Print all array elements using forEach.
+77. Find total using forEach.
+78. Print only even numbers using forEach.
+79. Convert all names to uppercase using forEach.
+80. Add 10 marks to every student mark.
+
+---
+
+# map Tasks
+
+81. Square all array numbers using map.
+82. Convert rupees to dollars using map.
+83. Add GST to all product prices.
+84. Convert all names to uppercase.
+85. Create new array with string lengths.
+86. Convert temperatures Celsius to Fahrenheit.
+
+---
+
+# filter Tasks
+
+87. Filter even numbers.
+88. Filter odd numbers.
+89. Filter students above 80 marks.
+90. Filter names starting with "A".
+91. Filter products above 1000 price.
+92. Filter palindrome strings from array.
+
+---
+
+# reduce Tasks
+
+93. Find total sum using reduce.
+94. Find largest number using reduce.
+95. Find smallest number using reduce.
+96. Count total characters in array of strings.
+97. Find total product price.
+
+
