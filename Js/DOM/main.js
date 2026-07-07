@@ -1,16 +1,48 @@
-// id
-// name
-// tagName
-// className
-// querySelector
+let user = document.getElementById("userName")
+let pass = document.getElementById("pass")
 
-let head =  document.getElementById("heads")
-// innetText
-head.textContent = "Hello Anandh"
-// innerHTML
-// textContent
+let userForm = document.getElementById("sumbitDetail")
 
-const show = ()=>{
-    console.log("Hello button is working");
+// submitDetail.addEventListener("submit",(e)=>{
+//     e.preventDefault();
+//     console.log(user.value);
+//     console.log(pass.value);
     
+// })
+
+const getDetails = (e)=>{
+    e.preventDefault();
+    console.log(user.value);
+    console.log(pass.value);
+}
+
+// onclick for click button tags
+// onchange for a input tags events
+// onsubmit while using form tags
+
+// Tagname
+// let btn = document.getElementsByTagName("button")[0]
+
+// let btn = document.querySelector("#btn")
+// let btn = document.querySelector(".btns")
+
+// btn.addEventListener("click",()=>{
+//     btn.textContent = "Clicked"
+// })
+
+let btn = document.querySelectorAll(".btns")
+
+// btn.forEach((element)=>{
+//     element.addEventListener("click",()=>{
+//         element.innerHTML ="Clicked"
+//     })
+// })
+
+let i =0
+
+while(i<btn.length){
+    btn[i].addEventListener("click",(e)=>{
+        event.target.innerHTML = "Clicked"
+    })
+    i++
 }
