@@ -59,7 +59,7 @@ def addStudent():
 def updateStudent(id):
     data = request.json
     for stu in students:
-        if stu[id]==id:
+        if stu["id"]==id:
             stu["name"] = data["name"]
             return{
                 "message":"Update sucessfully",
@@ -68,5 +68,19 @@ def updateStudent(id):
 
     return{"Message":"Unable to update student"}
 
+
+@app.route("/student/<int:id>", methods=["DELETE"])
+def deleteStudent(id):
+    for stu in students:
+        if stu["id"]==id:
+            students.remove(stu)
+            return{
+                "message":"Delete sucessfully",
+                "Student":stu            }
+
+    return{"Message":"Unable to Delete student"}
 if __name__ =="__main__":
     app.run(debug=True)
+
+
+# https://dev.mysql.com/downloads/workbench/
