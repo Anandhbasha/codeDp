@@ -86,3 +86,13 @@ print(flat)
 resdhapes = flat.reshape(3,5)
 print(resdhapes)
 
+
+a = numpy.array([1,2,3])
+b = numpy.array([2,3,6])
+res = numpy.dot(a,b)
+print(res)
+
+# 1*2+2*3+3*6 = 2+6+18=26
+# 26
+
+
