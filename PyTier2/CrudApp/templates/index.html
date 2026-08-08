@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <a href="/addPage"><h2>Add New Student</h2></a>
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Age</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            {%for s in stu%}
+            <tr>
+                <td>{{s.ID}}</td>
+                <td>{{s.STUDENT_NAME}}</td>
+                <td>{{s.COURSENAME}}</td>
+                <td>{{s.AGE}}</td>
+                <td><a href="/edit/{{s.ID}}">Edit</a></td>
+                <td><a href="/delStu/{{s.ID}}" onclick="return confirm('Are you sure you want to delete this student')">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

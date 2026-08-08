@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+</head>
+<body>
+    <a href="/"><button type="button">Back</button></a>
+    <h1>Edit Student</h1>
+    <form action="/stuUpdate/{{student.ID}}" method="post">
+        <div class="textInput">
+            <label for="studentName">Student Name</label>
+            <input type="text" placeholder="Enter your Name" name="studentName" id="studentName" value="{{student.STUDENT_NAME}}" required>
+        </div>
+        
+        <div class="textInput">
+            <label for="studentCourse">Student Course</label>
+            <select name="studentCourse" id="studentCourse">
+                <option value="tier1" {% if student.COURSENAME == "tier1" %}selected{% endif %}>Tier1</option>
+                <option value="tier2" {% if student.COURSENAME == "tier2" %}selected{% endif %}>Tier2</option>
+                <option value="tier3" {% if student.COURSENAME == "tier3" %}selected{% endif %}>Tier3</option>
+            </select>
+        </div>
+        
+        <div class="textInput">
+            <label for="age">Student Age</label>
+            <input type="number" name="studentAge" id="age" value="{{student.AGE}}" required>
+        </div>
+        
+        <div class="btmButton">
+            <button type="submit">Update Student</button>
+        </div>
+    </form>
+</body>
+</html>
