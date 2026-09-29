@@ -1,8 +1,11 @@
 import React from 'react'
+import Card from '../../Components/Cards/Card'
 
 const Electronics = () => {
   return (
-    <div>Electronics</div>
+    <div className='mainContiner'>
+      <Card />
+    </div>
   )
 }
 
