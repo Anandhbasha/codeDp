@@ -1,0 +1,15 @@
+.Navbar{
+    background-color: white;
+    box-shadow: .5px 1.8px white;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: navy;
+}

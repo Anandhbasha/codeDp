@@ -1,0 +1,7 @@
+.AllProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5vh;
+    row-gap: 25px;
+}
