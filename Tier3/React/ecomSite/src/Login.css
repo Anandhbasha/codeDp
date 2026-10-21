@@ -1,0 +1,48 @@
+.Login{
+    width: 600px;
+    height: 500px;
+    background:linear-gradient(rgb(157, 0, 255),rgb(0, 234, 214));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    height: 60%;
+}
+label{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 20px;
+    color: white;
+
+}
+.userName,.password{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+}
+
+input{
+    padding: 15px 25px;
+    border-radius: 15px;
+    width: 80%;
+    outline: none;
+    border: none;
+    
+}
+button{
+    padding: 15px 40px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    width: 65%;
+    cursor: pointer;
+}
