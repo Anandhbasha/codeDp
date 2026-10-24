@@ -1,28 +1,43 @@
+.loginPage{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .Login{
     width: 600px;
     height: 500px;
-    background:linear-gradient(rgb(157, 0, 255),rgb(0, 234, 214));
+    background:linear-gradient(135deg,#dbeafe,#effeff,#f8fafc);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 18px;
+    padding: 20px;
 }
 .loginForm{
     display: flex;
+    background-color: white;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 15px;
     width: 80%;
-    height: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    border-radius: 18px;
+}
+.loginForm h1{
+    color: #2563eb;
+    text-align: center;
 }
 label{
+    color: #2563eb;
     font-size: 1.2em;
     font-weight: 600;
     margin-right: 20px;
-    color: white;
 
 }
+
 .userName,.password{
     display: flex;
     flex-direction: column;
@@ -30,19 +45,28 @@ label{
     width: 70%;
 }
 
-input{
+.loginForm input{
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #cbd5e1; 
+
+}
+.loginForm input:focus{
+    border-color: #2563eb;
+    background-color: white;
+    color: #1d4ed8;
+}
+.loginBtn{
     padding: 15px 25px;
     border-radius: 15px;
-    width: 80%;
-    outline: none;
-    border: none;
-    
+    background-color: #2563eb;
+    font-weight: 600;
+    color: white;
 }
-button{
-    padding: 15px 40px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    width: 65%;
-    cursor: pointer;
+.loginBtn:hover{
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+    transition: 3s ease;
 }

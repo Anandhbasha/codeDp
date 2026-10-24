@@ -7,6 +7,8 @@ export const fetchProds = createAsyncThunk("products/fetchProds",async()=>{
         throw Error("Failed to get Products")
     }
     return await res.json()
+    console.log(res);
+    
 })
 export const prodSlice = createSlice({
         name:"products",
