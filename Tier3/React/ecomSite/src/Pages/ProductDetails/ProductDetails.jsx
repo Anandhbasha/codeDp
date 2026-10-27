@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
 import { addtoCart } from '../../Slice/cartSlice'
-
+import "./ProductDetails.css"
 const ProductDetails = () => {
   const {id} = useParams()
   const dispatch = useDispatch()
@@ -24,8 +24,8 @@ const ProductDetails = () => {
       </div>
       <div className='detailsContent'>
         <h1>{prod.title}</h1> 
-        <h1>{prod.price.toFixed(2)}</h1> 
-        <h1>{prod.description}</h1> 
+        <h2>{prod.price.toFixed(2)}</h2> 
+        <p>{prod.description}</p> 
         <button onClick={()=>dispatch(addtoCart(prod))}>Add to cart</button>
         Back to Products<Link to="/" className='backLink'></Link>
       </div>

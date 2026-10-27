@@ -11,6 +11,13 @@
     );
 }
 
+.heroLabel {
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #2563eb;
+}
+
 .hero h1 {
     margin: 14px 0;
     font-size: clamp(34px, 5vw, 56px);
@@ -23,14 +30,6 @@
     margin-bottom: 28px;
     line-height: 1.7;
 }
-
-.heroLabel {
-    letter-spacing: 3px;
-    font-size: 12px;
-    font-weight: 800;
-    color: #2563eb;
-}
-
 .shopNow {
     display: inline-block;
     background: #2563eb;
@@ -43,7 +42,7 @@
 .welcome,
 .categorySection,
 .productsSection,
-.categoryPage {
+.category {
     padding: 40px 5%;
 }
 
@@ -57,42 +56,33 @@
     margin-bottom: 15px;
 }
 
-.welcome p,
-.categoryPage > p {
+.welcome p {
     color: #64748b;
 }
-
-/* CATEGORIES */
-
-.categoryGrid {
+.categoryGrid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 18px;
     margin-top: 25px;
 }
-
-.categoryBox {
-    padding: 35px 15px;
-    background: white;
+.categoryBox{
+    padding: 30px 15px;
+    background-color: white;
     border: 1px solid #e2e8f0;
-    border-radius: 14px;
+    border-radius: 15px;
     text-align: center;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-family: 700;
     transition: 0.2s;
 }
-
-.categoryBox:hover {
+.categoryBox:hover{
     transform: translateY(-5px);
     border-color: #2563eb;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.05);
 }
-
-
-.productsGrid {
+.productsGrid{
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4,minmax(0,1fr));
     gap: 24px;
     margin-top: 28px;
 }
-

@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import Card from '../Components/Card/Card'
+import "./Cat.css"
 
 const Category = () => {
   const {category} = useParams()
