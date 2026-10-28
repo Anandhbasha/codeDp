@@ -53,7 +53,7 @@ const CardSidebar = ({ isOpen, closeCart }) => {
                     disabled={item.qty <= 1}
                     aria-label="Decrease quantity"
                   >
-                    <Minus size={15} />
+                  -
                   </button>
 
                   <span>{item.qty}</span>
@@ -62,7 +62,7 @@ const CardSidebar = ({ isOpen, closeCart }) => {
                     onClick={() => dispatch(increaseqty(item.id))}
                     aria-label="Increase quantity"
                   >
-                    <Plus size={15} />
+                    +
                   </button>
                 </div>
               </div>
@@ -71,8 +71,7 @@ const CardSidebar = ({ isOpen, closeCart }) => {
                 className="removeBtn"
                 onClick={() => dispatch(removeFromCart(item.id))}
                 aria-label={`Remove ${item.title}`}
-              >
-                <Trash2 size={18} />
+              ><i class="fa-solid fa-trash"></i>
               </button>
             </div>
           ))}
