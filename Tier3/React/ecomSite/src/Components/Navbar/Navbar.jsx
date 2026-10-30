@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { logout } from '../../Slice/authSlice'
 import "./Navbar.css"
 
@@ -24,6 +24,7 @@ const Navbar = ({openCart}) => {
           <NavLink to='category/jewelery'>Jewllery</NavLink>
           <NavLink to='category/electronics'>Electronics</NavLink>
           <NavLink to='category/womens'>Womens</NavLink>
+          <Link to="/checkout"></Link>
         </div>
         <div className='navRight'>
           <div className='placeHolder'></div>

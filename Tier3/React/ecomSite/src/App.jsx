@@ -9,6 +9,7 @@ import { fetchProds } from './Slice/products'
 import Category from './Pages/Category'
 import ProductDetails from './Pages/ProductDetails/ProductDetails'
 import CardSidebar from './Components/CardSidebar/CardSidebar'
+import Checkout from './Pages/Checkout/Checkout'
 
 const App = () => {
   const isLoggedin = useSelector((state)=>state.auth.isLoggedin)
@@ -33,7 +34,9 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/category/:category' element={<Category/>} />
         <Route path='/product/:id' element={<ProductDetails/>} />
+        <Route path='/checkout' element={<Checkout/>}/>
         <Route path='*' element={<Navigate to="/"replace/>}/>
+        
       </Routes>
     </BrowserRouter>
   )

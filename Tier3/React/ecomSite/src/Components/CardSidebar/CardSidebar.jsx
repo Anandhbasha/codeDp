@@ -17,6 +17,7 @@ const CardSidebar = ({ isOpen, closeCart }) => {
   const totalQty = items.reduce((sum, item) => sum + item.qty, 0);
   const handleCheckout = () => {
     closeCart();
+    alert("Hello")
     navigate("/checkout");
   };
   return (
