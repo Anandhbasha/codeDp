@@ -1,0 +1,86 @@
+
+db.departments.insertMany([
+  {
+    _id: 101,
+    departmentName: "Computer Science",
+    hod: "Dr. Kumar",
+    location: "Block A"
+  },
+  {
+    _id: 102,
+    departmentName: "Information Technology",
+    hod: "Dr. Priya",
+    location: "Block B"
+  },
+  {
+    _id: 103,
+    departmentName: "Electronics",
+    hod: "Dr. Raj",
+    location: "Block C"
+  },
+  {
+    _id: 104,
+    departmentName: "Mechanical",
+    hod: "Dr. Anand",
+    location: "Block D"
+  }
+]);
+
+db.students.insertMany([
+  {
+    _id: 1,
+    name: "Arun",
+    age: 21,
+    departmentId: 101,
+    city: "Chennai"
+  },
+  {
+    _id: 2,
+    name: "Priya",
+    age: 22,
+    departmentId: 102,
+    city: "Coimbatore"
+  },
+  {
+    _id: 3,
+    name: "Karthik",
+    age: 20,
+    departmentId: 101,
+    city: "Salem"
+  },
+  {
+    _id: 4,
+    name: "Divya",
+    age: 23,
+    departmentId: 103,
+    city: "Erode"
+  },
+  {
+    _id: 5,
+    name: "Sanjay",
+    age: 21,
+    departmentId: 104,
+    city: "Trichy"
+  },
+  {
+    _id: 6,
+    name: "Meena",
+    age: 22,
+    departmentId: 102,
+    city: "Madurai"
+  },
+  {
+    _id: 7,
+    name: "Vijay",
+    age: 24,
+    departmentId: 103,
+    city: "Chennai"
+  },
+  {
+    _id: 8,
+    name: "Nisha",
+    age: 20,
+    departmentId: 101,
+    city: "Salem"
+  }
+]);
